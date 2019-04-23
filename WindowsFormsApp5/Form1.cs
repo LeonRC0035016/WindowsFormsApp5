@@ -30,7 +30,7 @@ namespace WindowsFormsApp5
                 double SR2 = double.Parse(textBox2.Text);
 
                 double TR = SR1 + SR2;
-                MessageBox.Show("total resistance = " + TR.ToString("0.00") + "cm");
+                MessageBox.Show("total resistance = " + TR.ToString("0.00") + "m");
             }
             catch
             {
@@ -47,6 +47,28 @@ namespace WindowsFormsApp5
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double pR1 = double.Parse(textBox4.Text);
+                double pR2 = double.Parse(textBox3.Text);
+
+                double TR = 1/pR1 + 1/pR2;
+                MessageBox.Show("total resistance = " + TR.ToString("0.00") + "m");
+            }
+            catch
+            {
+                MessageBox.Show("Invalid Input");
+
+            }
         }
     }
 }
