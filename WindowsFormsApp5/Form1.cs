@@ -26,7 +26,7 @@ namespace WindowsFormsApp5
         {
             try
             {
-                double SR6 = Convert.ToDouble(textBox4.Text);
+                double SR6 = Convert.ToDouble(textBox4.Text);// these are where i make the inputs into variables
                 double SR7 = Convert.ToDouble(textBox5.Text);
                 double SR8 = 0.0;
                 if (textBox6.Text == "0")
@@ -35,7 +35,7 @@ namespace WindowsFormsApp5
                     SR8 = Convert.ToDouble(textBox6.Text6.Text)
                         double SR9 = 0.0;
                 if (textBox9.Text == "0")
-                    SR9 = double.PositiveInfinity;
+                    SR9 = double.PositiveInfinity;// these are if staements to give an outcome when something specific happens
                 else
                     SR9 = Convert.ToDouble(textBox9.Text);
                 double SR10 = 0.0;
@@ -43,12 +43,12 @@ namespace WindowsFormsApp5
                     SR10 = double.PositiveInfinity;
                 else
                     SR10 = Convert.ToDouble(textBox10.Text):
-                    double doubletotal = 1.0 / (1.0 / SR6 + 1.0 / SR7 + 1.0 / SR8 + 1.0 / SR9 + 1.0 / SR10);
+                    double doubletotal = 1.0 / (1.0 / SR6 + 1.0 / SR7 + 1.0 / SR8 + 1.0 / SR9 + 1.0 / SR10);// this i where i apply the parallel formula to the variables 
                 MessageBox.Show(doubletotal.ToString("0.00") + "ohms");
             }       // there is going to be a decimal and ohms at the end with this code 
                 try
             {
-                double SR1 = double.Parse(textBox1.Text);
+                double SR1 = double.Parse(textBox1.Text);// this i where i make the series boxs into variables 
                 double SR2 = double.Parse(textBox2.Text);
                 double SR3 = double.Parse(textBox5.Text);
                 double SR4 = double.Parse(textBox6.Text);
@@ -56,7 +56,7 @@ namespace WindowsFormsApp5
 
 
                 double TR = SR1 + SR2 + SR3 + SR4 + SR5;
-                MessageBox.Show("total resistance = " + TR.ToString("0.00") + "m");
+                MessageBox.Show("total resistance = " + TR.ToString("0.00") + "m");// this is where i apply series formula to the variables 
             }
             catch
             {
